@@ -1,0 +1,23 @@
+{
+	"name": "LS_SqlServerTable",
+	"properties": {
+		"description": "LS_SqlServerTable,  this linked service pointing to on premise sql server location",
+		"annotations": [],
+		"type": "SqlServer",
+		"typeProperties": {
+			"connectionString": "Integrated Security=False;Data Source=KANCHAN-PC\\SQLEXPRESS;Initial Catalog=AdventureWorksLT2017;User ID=swami",
+			"password": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "AzureKeyVault_Data_Eng",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "password"
+			}
+		},
+		"connectVia": {
+			"referenceName": "integrationRuntime1",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}
