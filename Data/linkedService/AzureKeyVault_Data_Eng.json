@@ -1,0 +1,10 @@
+{
+	"name": "AzureKeyVault_Data_Eng",
+	"properties": {
+		"annotations": [],
+		"type": "AzureKeyVault",
+		"typeProperties": {
+			"baseUrl": "https://key-value-data-eng.vault.azure.net/"
+		}
+	}
+}
