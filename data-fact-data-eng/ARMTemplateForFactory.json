@@ -163,7 +163,7 @@
 						"type": "DatabricksNotebook",
 						"dependsOn": [
 							{
-								"activity": "ForEach Table",
+								"activity": "Bronze to Silver ",
 								"dependencyConditions": [
 									"Succeeded"
 								]
@@ -188,7 +188,14 @@
 					{
 						"name": "Bronze to Silver",
 						"type": "DatabricksNotebook",
-						"dependsOn": [],
+						"dependsOn": [
+							{
+								"activity": "ForEach Table",
+								"dependencyConditions": [
+									"Succeeded"
+								]
+							}
+						],
 						"policy": {
 							"timeout": "0.12:00:00",
 							"retry": 0,
