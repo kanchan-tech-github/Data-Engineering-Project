@@ -135,7 +135,7 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"notebookPath": "/Shared/Bronz to Silver Notebook"
+					"notebookPath": "/Shared/Bronze to Silver Notebook"
 				},
 				"linkedServiceName": {
 					"referenceName": "LS_AzureDatabricks",
