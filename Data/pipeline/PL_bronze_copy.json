@@ -149,7 +149,8 @@
 					{
 						"activity": "Bronze to Silver ",
 						"dependencyConditions": [
-							"Succeeded"
+							"Succeeded",
+							"Completed"
 						]
 					}
 				],
