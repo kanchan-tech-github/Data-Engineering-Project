@@ -1,0 +1,20 @@
+{
+	"name": "LS_AzureDatabricks",
+	"properties": {
+		"description": "LS_AzureDatabricks, this linked service is pointing to Databricks for Transformation.",
+		"annotations": [],
+		"type": "AzureDatabricks",
+		"typeProperties": {
+			"domain": "https://adb-2824329772083893.13.azuredatabricks.net",
+			"accessToken": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "AzureKeyVault_Data_Eng",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "dbworkspacetoken"
+			},
+			"existingClusterId": "0331-033123-x1fn7ayc"
+		}
+	}
+}
