@@ -318,7 +318,7 @@
 						}
 					},
 					{
-						"name": "Bronze to Silver",
+						"name": "Silver to Gold",
 						"type": "DatabricksNotebook",
 						"dependsOn": [
 							{
@@ -337,7 +337,7 @@
 						},
 						"userProperties": [],
 						"typeProperties": {
-							"notebookPath": "/Shared/Bronze to Silver Notebook"
+							"notebookPath": "/Shared/Silver to Gold Notebook"
 						},
 						"linkedServiceName": {
 							"referenceName": "LS_AzureDatabricks",
@@ -345,16 +345,9 @@
 						}
 					},
 					{
-						"name": "Silver to Gold",
+						"name": "Bronze to Silver",
 						"type": "DatabricksNotebook",
-						"dependsOn": [
-							{
-								"activity": "Bronze to Silver ",
-								"dependencyConditions": [
-									"Succeeded"
-								]
-							}
-						],
+						"dependsOn": [],
 						"policy": {
 							"timeout": "0.12:00:00",
 							"retry": 0,
@@ -364,7 +357,7 @@
 						},
 						"userProperties": [],
 						"typeProperties": {
-							"notebookPath": "/Shared/Silver to Gold Notebook"
+							"notebookPath": "/Shared/Bronze to Silver Notebook"
 						},
 						"linkedServiceName": {
 							"referenceName": "LS_AzureDatabricks",
