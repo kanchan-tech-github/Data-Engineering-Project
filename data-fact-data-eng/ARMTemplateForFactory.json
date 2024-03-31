@@ -27,6 +27,10 @@
 		"integrationRuntime1_properties_typeProperties_linkedInfo_resourceId": {
 			"type": "string",
 			"defaultValue": "/subscriptions/1a6b65b6-cbb5-4449-81dc-4dff7aec4452/resourcegroups/rg_ADF_Ecom_Project/providers/Microsoft.DataFactory/factories/DataFact-Ecom-Project/integrationruntimes/integrationRuntime1"
+		},
+		"LS_AzureDatabricks_properties_typeProperties_existingClusterId": {
+			"type": "string",
+			"defaultValue": "0331-033123-x1fn7ayc"
 		}
 	},
 	"variables": {
@@ -298,6 +302,31 @@
 				}
 			},
 			"dependsOn": []
+		},
+		{
+			"name": "[concat(parameters('factoryName'), '/LS_AzureDatabricks')]",
+			"type": "Microsoft.DataFactory/factories/linkedServices",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"description": "LS_AzureDatabricks, this linked service is pointing to Databricks for Transformation.",
+				"annotations": [],
+				"type": "AzureDatabricks",
+				"typeProperties": {
+					"domain": "https://adb-2824329772083893.13.azuredatabricks.net",
+					"accessToken": {
+						"type": "AzureKeyVaultSecret",
+						"store": {
+							"referenceName": "AzureKeyVault_Data_Eng",
+							"type": "LinkedServiceReference"
+						},
+						"secretName": "dbworkspacetoken"
+					},
+					"existingClusterId": "[parameters('LS_AzureDatabricks_properties_typeProperties_existingClusterId')]"
+				}
+			},
+			"dependsOn": [
+				"[concat(variables('factoryId'), '/linkedServices/AzureKeyVault_Data_Eng')]"
+			]
 		}
 	]
 }

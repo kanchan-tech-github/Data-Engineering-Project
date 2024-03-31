@@ -20,6 +20,9 @@
 		"integrationRuntime1_properties_typeProperties_linkedInfo_resourceId": {
 			"value": "/subscriptions/1a6b65b6-cbb5-4449-81dc-4dff7aec4452/resourcegroups/rg_ADF_Ecom_Project/providers/Microsoft.DataFactory/factories/DataFact-Ecom-Project/integrationruntimes/integrationRuntime1"
 		},
+		"LS_AzureDatabricks_properties_typeProperties_existingClusterId": {
+			"value": "0331-033123-x1fn7ayc"
+		},
 		"containerUri": {
 			"value": ""
 		},
