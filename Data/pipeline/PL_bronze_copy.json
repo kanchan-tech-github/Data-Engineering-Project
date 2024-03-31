@@ -120,7 +120,7 @@
 				"type": "DatabricksNotebook",
 				"dependsOn": [
 					{
-						"activity": "Bronze to Silver ",
+						"activity": "Bronze to Silver",
 						"dependencyConditions": [
 							"Succeeded"
 						]
