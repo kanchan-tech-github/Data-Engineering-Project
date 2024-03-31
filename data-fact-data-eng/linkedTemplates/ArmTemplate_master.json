@@ -20,6 +20,10 @@
 			"type": "string",
 			"defaultValue": "https://key-value-data-eng.vault.azure.net/"
 		},
+		"LS_AzureDatabricks_properties_typeProperties_existingClusterId": {
+			"type": "string",
+			"defaultValue": "0331-033123-x1fn7ayc"
+		},
 		"LS_Parquet_properties_typeProperties_url": {
 			"type": "string",
 			"defaultValue": "https://adls0data0engineering.dfs.core.windows.net/"
@@ -27,10 +31,6 @@
 		"integrationRuntime1_properties_typeProperties_linkedInfo_resourceId": {
 			"type": "string",
 			"defaultValue": "/subscriptions/1a6b65b6-cbb5-4449-81dc-4dff7aec4452/resourcegroups/rg_ADF_Ecom_Project/providers/Microsoft.DataFactory/factories/DataFact-Ecom-Project/integrationruntimes/integrationRuntime1"
-		},
-		"LS_AzureDatabricks_properties_typeProperties_existingClusterId": {
-			"type": "string",
-			"defaultValue": "0331-033123-x1fn7ayc"
 		},
 		"containerUri": {
 			"type": "string",
