@@ -5,16 +5,20 @@
 		"annotations": [],
 		"type": "AzureDatabricks",
 		"typeProperties": {
-			"domain": "https://adb-2824329772083893.13.azuredatabricks.net",
+			"domain": "https://adb-2941239168710818.18.azuredatabricks.net",
 			"accessToken": {
 				"type": "AzureKeyVaultSecret",
 				"store": {
 					"referenceName": "AzureKeyVault_Data_Eng",
 					"type": "LinkedServiceReference"
 				},
-				"secretName": "dbworkspacetoken"
+				"secretName": "databrick-token"
 			},
-			"existingClusterId": "0331-033123-x1fn7ayc"
+			"existingClusterId": "0403-074541-mmtfdg35"
+		},
+		"connectVia": {
+			"referenceName": "integrationRuntime1",
+			"type": "IntegrationRuntimeReference"
 		}
 	}
 }
