@@ -1,5 +1,6 @@
 {
 	"name": "LS_SqlServerTable",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
 	"properties": {
 		"description": "LS_SqlServerTable,  this linked service pointing to on premise sql server location",
 		"annotations": [],

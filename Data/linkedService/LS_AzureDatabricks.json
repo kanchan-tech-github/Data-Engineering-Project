@@ -1,5 +1,6 @@
 {
 	"name": "LS_AzureDatabricks",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
 	"properties": {
 		"description": "LS_AzureDatabricks, this linked service is pointing to Databricks for Transformation.",
 		"annotations": [],
