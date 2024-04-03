@@ -138,7 +138,7 @@
 					"notebookPath": "/Shared/Silver to Gold Notebook"
 				},
 				"linkedServiceName": {
-					"referenceName": "LS_AzureDatabricks",
+					"referenceName": "AzureDatabricks1",
 					"type": "LinkedServiceReference"
 				}
 			},
