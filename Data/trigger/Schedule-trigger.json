@@ -1,0 +1,26 @@
+{
+	"name": "Schedule-trigger",
+	"properties": {
+		"description": "Schedule-trigger, this trigger to copy all new inserted data from on premise to ADLS",
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "PL_bronze_copy",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "ScheduleTrigger",
+		"typeProperties": {
+			"recurrence": {
+				"frequency": "Day",
+				"interval": 1,
+				"startTime": "2024-04-04T06:00:00",
+				"endTime": "2024-04-05T06:29:00",
+				"timeZone": "India Standard Time"
+			}
+		}
+	}
+}
