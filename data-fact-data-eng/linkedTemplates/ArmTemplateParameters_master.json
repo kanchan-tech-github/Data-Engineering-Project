@@ -17,9 +17,6 @@
 		"synapse-data-eng-WorkspaceDefaultSqlServer_connectionString": {
 			"value": "Integrated Security=False;Encrypt=True;Connection Timeout=30;Data Source=tcp:synapse-data-eng.sql.azuresynapse.net,1433;Initial Catalog=@{linkedService().DBName}"
 		},
-		"AzureDatabricks1_properties_typeProperties_existingClusterId": {
-			"value": "0403-074541-mmtfdg35"
-		},
 		"AzureKeyVault_Data_Eng_properties_typeProperties_baseUrl": {
 			"value": "https://key-value-data-eng.vault.azure.net/"
 		},

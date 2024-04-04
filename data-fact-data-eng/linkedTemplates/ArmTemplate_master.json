@@ -26,10 +26,6 @@
 			"metadata": "Secure string for 'connectionString' of 'synapse-data-eng-WorkspaceDefaultSqlServer'",
 			"defaultValue": "Integrated Security=False;Encrypt=True;Connection Timeout=30;Data Source=tcp:synapse-data-eng.sql.azuresynapse.net,1433;Initial Catalog=@{linkedService().DBName}"
 		},
-		"AzureDatabricks1_properties_typeProperties_existingClusterId": {
-			"type": "string",
-			"defaultValue": "0403-074541-mmtfdg35"
-		},
 		"AzureKeyVault_Data_Eng_properties_typeProperties_baseUrl": {
 			"type": "string",
 			"defaultValue": "https://key-value-data-eng.vault.azure.net/"
@@ -97,9 +93,6 @@
 					},
 					"integrationRuntime1_properties_typeProperties_linkedInfo_resourceId": {
 						"value": "[parameters('integrationRuntime1_properties_typeProperties_linkedInfo_resourceId')]"
-					},
-					"AzureDatabricks1_properties_typeProperties_existingClusterId": {
-						"value": "[parameters('AzureDatabricks1_properties_typeProperties_existingClusterId')]"
 					},
 					"LS_AzureDatabricks_properties_typeProperties_existingClusterId": {
 						"value": "[parameters('LS_AzureDatabricks_properties_typeProperties_existingClusterId')]"
