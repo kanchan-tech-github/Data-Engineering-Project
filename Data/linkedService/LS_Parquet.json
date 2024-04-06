@@ -1,6 +1,6 @@
 {
 	"name": "LS_Parquet",
-	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"type": "Microsoft.Synapse/workspaces/linkedservices",
 	"properties": {
 		"description": "LS_Parquet, this linked service pointing to ADLS container ie. storage account adls0data0engineering",
 		"annotations": [],
