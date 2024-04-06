@@ -3,7 +3,7 @@
 	"properties": {
 		"description": "Schedule-trigger, this trigger to copy all new inserted data from on premise to ADLS",
 		"annotations": [],
-		"runtimeState": "Started",
+		"runtimeState": "Stopped",
 		"pipelines": [
 			{
 				"pipelineReference": {
