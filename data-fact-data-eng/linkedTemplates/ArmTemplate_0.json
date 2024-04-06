@@ -421,7 +421,8 @@
 				"policy": {
 					"elapsedTimeMetric": {}
 				},
-				"annotations": []
+				"annotations": [],
+				"lastPublishTime": "2024-04-06T06:28:20Z"
 			},
 			"dependsOn": [
 				"[concat(variables('factoryId'), '/datasets/goldtables')]",
@@ -608,7 +609,7 @@
 					"elapsedTimeMetric": {}
 				},
 				"annotations": [],
-				"lastPublishTime": "2024-04-03T08:56:52Z"
+				"lastPublishTime": "2024-04-06T06:42:37Z"
 			},
 			"dependsOn": [
 				"[concat(variables('factoryId'), '/datasets/DS_SqlServerTable')]",
@@ -623,7 +624,7 @@
 			"properties": {
 				"description": "Schedule-trigger, this trigger to copy all new inserted data from on premise to ADLS",
 				"annotations": [],
-				"runtimeState": "Started",
+				"runtimeState": "Stopped",
 				"pipelines": [
 					{
 						"pipelineReference": {
