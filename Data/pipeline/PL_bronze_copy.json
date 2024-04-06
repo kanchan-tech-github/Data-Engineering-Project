@@ -59,7 +59,16 @@
 								"secureOutput": false,
 								"secureInput": false
 							},
-							"userProperties": [],
+							"userProperties": [
+								{
+									"name": "Source",
+									"value": ""
+								},
+								{
+									"name": "Destination",
+									"value": "bronze/@{concat(item().SchemaName,'/',item().TableName)}/@{concat(item().TableName,'.parquet')}"
+								}
+							],
 							"typeProperties": {
 								"source": {
 									"type": "SqlServerSource",
@@ -167,6 +176,29 @@
 				"linkedServiceName": {
 					"referenceName": "LS_AzureDatabricks",
 					"type": "LinkedServiceReference"
+				}
+			},
+			{
+				"name": "Execute Pipeline1",
+				"type": "ExecutePipeline",
+				"dependsOn": [
+					{
+						"activity": "Silver to Gold",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"policy": {
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"pipeline": {
+						"referenceName": "PL_ToCreateView_Dynamically",
+						"type": "PipelineReference"
+					},
+					"waitOnCompletion": true
 				}
 			}
 		],
