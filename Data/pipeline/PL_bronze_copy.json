@@ -168,32 +168,10 @@
 					"referenceName": "LS_AzureDatabricks",
 					"type": "LinkedServiceReference"
 				}
-			},
-			{
-				"name": "Execute Pipeline from master to child",
-				"type": "ExecutePipeline",
-				"dependsOn": [
-					{
-						"activity": "Silver to Gold",
-						"dependencyConditions": [
-							"Succeeded"
-						]
-					}
-				],
-				"policy": {
-					"secureInput": false
-				},
-				"typeProperties": {
-					"pipeline": {
-						"referenceName": "PL_ToCreateView_Dynamically",
-						"type": "PipelineReference"
-					},
-					"waitOnCompletion": true
-				}
 			}
 		],
 		"annotations": [],
-		"lastPublishTime": "2024-04-03T08:56:52Z"
+		"lastPublishTime": "2024-04-04T07:00:53Z"
 	},
 	"type": "Microsoft.DataFactory/factories/pipelines"
 }

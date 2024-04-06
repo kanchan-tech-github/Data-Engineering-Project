@@ -1,5 +1,6 @@
 {
 	"name": "LS_SqlServerTable",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
 	"properties": {
 		"description": "LS_SqlServerTable,  this linked service pointing to on premise sql server location",
 		"annotations": [],
@@ -19,6 +20,5 @@
 			"referenceName": "integrationRuntime1",
 			"type": "IntegrationRuntimeReference"
 		}
-	},
-	"type": "Microsoft.DataFactory/factories/linkedservices"
+	}
 }
